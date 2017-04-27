@@ -15,6 +15,15 @@ ActiveRecord::Schema.define(version: 20170426211332) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "articles", force: :cascade do |t|
+    t.string   "title"
+    t.text     "text"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_articles_on_user_id", using: :btree
+  end
+
   create_table "images", force: :cascade do |t|
     t.string   "url"
     t.string   "imageable_type"
@@ -24,15 +33,8 @@ ActiveRecord::Schema.define(version: 20170426211332) do
     t.index ["imageable_type", "imageable_id"], name: "index_images_on_imageable_type_and_imageable_id", using: :btree
   end
 
-  create_table "news", force: :cascade do |t|
-    t.text     "text"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_news_on_user_id", using: :btree
-  end
-
   create_table "projects", force: :cascade do |t|
+    t.string   "name"
     t.string   "team_name"
     t.string   "location"
     t.integer  "area"

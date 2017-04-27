@@ -54,6 +54,7 @@ group :development do
   gem 'hirb'
   gem 'better_errors'
   gem 'table_print'
+  gem 'awesome_print'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
