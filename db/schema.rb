@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20170428171122) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
-    t.text     "text",       default: "", null: false
+    t.text     "text",       null: false
     t.integer  "user_id"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_articles_on_user_id", using: :btree
   end
 
@@ -45,12 +45,12 @@ ActiveRecord::Schema.define(version: 20170428171122) do
   end
 
   create_table "team_members", force: :cascade do |t|
-    t.string   "first_name", default: "", null: false
+    t.string   "first_name", null: false
     t.string   "last_name"
     t.string   "role"
     t.text     "bio"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
@@ -74,11 +74,11 @@ ActiveRecord::Schema.define(version: 20170428171122) do
   end
 
   create_table "videos", force: :cascade do |t|
-    t.string   "url",            default: "", null: false
+    t.string   "url",            null: false
     t.string   "videoable_type"
     t.integer  "videoable_id"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.index ["videoable_type", "videoable_id"], name: "index_videos_on_videoable_type_and_videoable_id", using: :btree
   end
 
