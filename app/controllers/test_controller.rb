@@ -1,5 +1,5 @@
 class TestController < ApplicationController
   def test
-    render("test/index-sidenav.html.erb")
+    render("test/index-slider.html.erb")
   end
 end
