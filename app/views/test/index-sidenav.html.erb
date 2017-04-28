@@ -4,7 +4,7 @@
         <div class="offcanvas-btn">
             <button class="menu-btn"><i class="ion-android-menu"></i></button>
         </div>
-        <a class="navbar-brand" href="index.html"><% image_tag("assets/images/logo-light.png", alt:"logo") %></a>
+        <!-- <a class="navbar-brand" href="index.html"><% image_tag("assets/images/logo-light.png", alt:"logo") %></a> -->
     </div>
 </nav>
 
@@ -36,7 +36,7 @@
 <!--end navigation-->
 <section id="home" class="dzsparallaxer auto-init dzsparallaxer---window-height use-loading" style="position: relative; height: 800px;" data-options='{  mode_scroll: "normal" }'>
 
-    <div class="divimage dzsparallaxer--target " data-src="assets/images/bg-1.jpg" style="width: 100%; height: 130%; background-image: url()">
+    <div class="divimage dzsparallaxer--target " data-src="<%= asset_path 'bg-1.jpg' %>" style="width: 100%; height: 130%; background-image: url()">
         <div class="hero-parallax">
             <div class="hero-inner">
                 <div class="hero-content">
@@ -153,7 +153,7 @@
 <!-- Parallax -->
 <div class="dzsparallaxer auto-init" data-options='{   direction: "reverse"}' style="height: 350px;">
 
-    <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(assets/images/bg-2.jpg)">
+    <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(<%= asset_path 'bg-2.jpg' %>)">
     </div>
     <div class=" parallax-text text-center center-it">
         <h2>" A Super Simple Minimal One Page for Creative & Small Agencies "</h2>
@@ -168,8 +168,8 @@
         <div class="row">
             <div class="col-md-6 col-lg-3 margin-b-30">
                 <div class="person-col scrollReveal sr-bottom sr-ease-in-out-quad sr-delay-1">
-                    <!-- <img src="assets/images/team1.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/team1.png", alt: "", class: "img-fluid") %>
+                    <img src="<%= asset_path 'team1.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/team1.png", alt: "", class: "img-fluid") %> -->
                     <div class="person-overlay">
                         <div class="person-inner">
                             <h4 class="text-uppercase">Carlos Smith</h4>
@@ -185,8 +185,8 @@
             </div><!--col-->
             <div class="col-md-6 col-lg-3 margin-b-30">
                 <div class="person-col person-col scrollReveal sr-bottom sr-ease-in-out-quad sr-delay-2">
-                    <!-- <img src="assets/images/team2.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/team2.png", alt:"", class:"img-fluid") %>
+                    <img src="<%= asset_path 'team2.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/team2.png", alt:"", class:"img-fluid") %> -->
                     <div class="person-overlay">
                         <div class="person-inner">
                             <h4 class="text-uppercase">Emily Doe</h4>
@@ -202,8 +202,8 @@
             </div><!--col-->
             <div class="col-md-6 col-lg-3 margin-b-30">
                 <div class="person-col person-col scrollReveal sr-bottom sr-ease-in-out-quad sr-delay-3">
-                    <!-- <img src="assets/images/team3.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/team3.png", alt:"", class:"img-fluid") %>
+                    <img src="<%= asset_path 'team3.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/team3.png", alt:"", class:"img-fluid") %> -->
                     <div class="person-overlay">
                         <div class="person-inner">
                             <h4 class="text-uppercase">Emily Doe</h4>
@@ -219,8 +219,8 @@
             </div><!--col-->
             <div class="col-md-6 col-lg-3 margin-b-30">
                 <div class="person-col person-col scrollReveal sr-bottom sr-ease-in-out-quad sr-delay-4">
-                    <!-- <img src="assets/images/team4.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/team4.png", alt:"", class:"img-fluid") %>
+                    <img src="<%= asset_path 'team4.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/team4.png", alt:"", class:"img-fluid") %> -->
                     <div class="person-overlay">
                         <div class="person-inner">
                             <h4 class="text-uppercase">John Doe</h4>
@@ -243,7 +243,7 @@
 <!--video tour-->
 <div class="dzsparallaxer auto-init" data-options='{   direction: "reverse"}' style="height: 350px;">
 
-    <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(assets/images/bg-2.jpg)">
+    <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(<%= asset_path 'bg-2.jpg' %>)">
     </div>
     <div class=" parallax-text text-center center-it">
         <h2>Take a video tour</h2>
@@ -338,7 +338,7 @@
 <!-- Parallax -->
 <div class="dzsparallaxer auto-init" data-options='{   direction: "reverse"}' style="height: 350px;">
 
-    <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(assets/images/bg-3.jpg)">
+    <div class="divimage dzsparallaxer--target " style="width: 101%; height: 600px; background-image: url(<%= asset_path 'bg-3.jpg' %>)">
     </div>
     <div class=" parallax-text text-center center-it">
         <div class="testi-slider">
@@ -483,8 +483,8 @@
             <div class="cbp-item identity">
                 <a href="assets/ajax-awesome-work/project1.html" class="cbp-caption cbp-singlePage" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
-                        <!-- <img src="assets/images/w1.jpg" alt=""> -->
-                        <% image_tag("assets/images/w1.jpg", alt:"") %>
+                        <img src="<%= asset_path 'w1.jpg' %>" alt="">
+                        <!-- <% image_tag("assets/images/w1.jpg", alt:"") %> -->
                     </div>
                     <div class="cbp-caption-activeWrap"></div>
                 </a>
@@ -494,8 +494,8 @@
             <div class="cbp-item web-design logos">
                 <a href="assets/ajax-awesome-work/project2.html" class="cbp-caption cbp-singlePage" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
-                        <!-- <img src="assets/images/w2.jpg" alt=""> -->
-                        <% image_tag("assets/images/w2.jpg", alt:"") %>
+                        <img src="<%= asset_path 'w2.jpg' %>" alt="">
+                        <!-- <% image_tag("assets/images/w2.jpg", alt:"") %> -->
                     </div>
                     <div class="cbp-caption-activeWrap"></div>
                 </a>
@@ -505,8 +505,8 @@
             <div class="cbp-item graphic logos">
                 <a href="assets/ajax-awesome-work/project3.html" class="cbp-caption cbp-singlePage" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
-                        <!-- <img src="assets/images/w3.jpg" alt=""> -->
-                        <% image_tag("assets/images/w3.jpg", alt:"") %>
+                        <img src="<%= asset_path 'w3.jpg' %>" alt="">
+                        <!-- <% image_tag("assets/images/w3.jpg", alt:"") %> -->
                     </div>
                     <div class="cbp-caption-activeWrap"></div>
                 </a>
@@ -516,8 +516,8 @@
             <div class="cbp-item web-design graphic">
                 <a href="assets/ajax-awesome-work/project4.html" class="cbp-caption cbp-singlePage" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
-                        <!-- <img src="assets/images/w4.jpg" alt=""> -->
-                        <% image_tag("assets/images/w4.jpg", alt: "") %>
+                        <img src="<%= asset_path 'w4.jpg' %>" alt="">
+                        <!-- <% image_tag("assets/images/w4.jpg", alt: "") %> -->
                     </div>
                     <div class="cbp-caption-activeWrap"></div>
                 </a>
@@ -527,8 +527,8 @@
             <div class="cbp-item identity web-design">
                 <a href="assets/ajax-awesome-work/project5.html" class="cbp-caption cbp-singlePage" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
-                        <!-- <img src="assets/images/w5.jpg" alt=""> -->
-                        <% image_tag("assets/images/w5.jpg", alt: "") %>
+                        <img src="<%= asset_path 'w5.jpg' %>" alt="">
+                        <!-- <% image_tag("assets/images/w5.jpg", alt: "") %> -->
                     </div>
                     <div class="cbp-caption-activeWrap"></div>
                 </a>
@@ -538,8 +538,8 @@
             <div class="cbp-item identity web-design">
                 <a href="assets/ajax-awesome-work/project6.html" class="cbp-caption cbp-singlePage" rel="nofollow">
                     <div class="cbp-caption-defaultWrap">
-                        <!-- <img src="assets/images/w6.jpg" alt=""> -->
-                        <% image_tag("assets/images/w6.jpg", alt: "") %>
+                        <img src="<%= asset_path 'w6.jpg' %>" alt="">
+                        <!-- <% image_tag("assets/images/w6.jpg", alt: "") %> -->
                     </div>
                     <div class="cbp-caption-activeWrap"></div>
                 </a>
@@ -565,38 +565,38 @@
         <div class="row">
             <div class="col-lg-2 col-md-4 col-xs-6 scrollReveal sr-bottom">
                 <a href="#">
-                    <!-- <img src="assets/images/cl-1.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/cl-1.png", alt: "", class: "img-fluid") %>
+                    <img src="<%= asset_path 'cl-1.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/cl-1.png", alt: "", class: "img-fluid") %> -->
                 </a>
             </div><!--partner col-->
             <div class="col-lg-2 col-md-4 col-xs-6  scrollReveal sr-bottom sr-delay-1">
                 <a href="#">
-                    <!-- <img src="assets/images/cl-2.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/cl-2.png", alt:"", class: "img-fluid") %>
+                    <img src="<%= asset_path 'cl-2.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/cl-2.png", alt:"", class: "img-fluid") %> -->
                 </a>
             </div><!--partner col-->
             <div class="col-lg-2 col-md-4 col-xs-6  scrollReveal sr-bottom sr-delay-2">
                 <a href="#">
-                    <!-- <img src="assets/images/cl-3.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/cl-3.png", alt:"", class: "img-fluid") %>
+                    <img src="<%= asset_path 'cl-3.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/cl-3.png", alt:"", class: "img-fluid") %> -->
                 </a>
             </div><!--partner col-->
             <div class="col-lg-2 col-md-4 col-xs-6  scrollReveal sr-bottom sr-delay-3">
                 <a href="#">
-                    <!-- <img src="assets/images/cl-4.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/cl-4.png", alt:"", class:"img-fluid") %>
+                    <img src="<%= asset_path 'cl-4.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/cl-4.png", alt:"", class:"img-fluid") %> -->
                 </a>
             </div><!--partner col-->
             <div class="col-lg-2 col-md-4 col-xs-6  scrollReveal sr-bottom sr-delay-4">
                 <a href="#">
-                    <!-- <img src="assets/images/cl-1.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/cl-1.png", alt: "", class: "img-fluid") %>
+                    <img src="<%= asset_path 'cl-1.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/cl-1.png", alt: "", class: "img-fluid") %> -->
                 </a>
             </div><!--partner col-->
             <div class="col-lg-2 col-md-4 col-xs-6  scrollReveal sr-bottom sr-delay-5">
                 <a href="#">
-                    <!-- <img src="assets/images/cl-2.png" alt="" class="img-fluid"> -->
-                    <% image_tag("assets/images/cl-2.png", alt:"", class:"img-fluid") %>
+                    <img src="<%= asset_path 'cl-2.png' %>" alt="" class="img-fluid">
+                    <!-- <% image_tag("assets/images/cl-2.png", alt:"", class:"img-fluid") %> -->
                 </a>
             </div><!--partner col-->
         </div>
