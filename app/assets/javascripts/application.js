@@ -11,6 +11,24 @@
 // about supported directives.
 //
 //= require jquery
+//= require lib/tether.min.js
+//= require lib/jquery-migrate.min.js
+//= require lib/jquery.easing.min.js
+//= require lib/bootstrap.min.js
+//= require lib/jquery.flexslider-min.js
+//= require lib/modernizr.custom.97074.js
+//= require lib/jquery.sticky.js
+//= require lib/smooth-scroll.min.js
+//= require lib/jquery.preloader.min.js
+//= require lib/scrollreveal.min.js
+//= require lib/dzsparallaxer.js
+//= require lib/template-custom.js
+//= require lib/jquery.cubeportfolio.min.js
+//= require lib/cube-awesome-work.js
+//= require lib/scroll-reavel-custom.js
+//= require lib/pushy.min.js
+//= require lib/google-map.js
+//= require lib/contact.js
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
