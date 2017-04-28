@@ -1,13 +1,18 @@
 logan = User.create(admin:true, email:"logandsprice@gmail.com", password:"password", first_name: "Logan", last_name: "Price")
 pavan = User.create(email:"pksarguru@gmail.com", password:"password", first_name: "Pavan", last_name: "Sarguru")
 
-a = logan.articles.create(text:"Holy guacamole! We're doing great!")
+a = logan.articles.create(text:"Holy guacamole! We're doing great!", title:"Beep Boop Bop!")
 aa = pavan.articles.create(text:"Hot tamale arm sweat!", title:"Big Software Strikes Again!")
 
 a.images.create(url: "www.google.com")
 a.images.create(url: "www.polygon.com")
 aa.images.create(url: "www.twitter.com")
 aa.images.create(url: "www.theverge.com")
+
+a.videos.create(url:"www.engadget.com")
+a.videos.create(url:"www.nytimes.com")
+aa.videos.create(url:"www.npr.org")
+aa.videos.create(url:"www.gizmodo.com")
 
 p = Project.create(name:"Xanadu Center", team_name:"Xanadu", location:"Chicago, IL", area: 20000, completion_date: Date.today, description:"This incomarabale compound is home to over 20 friends")
 
