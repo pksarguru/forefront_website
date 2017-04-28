@@ -40,8 +40,9 @@ ActiveRecord::Schema.define(version: 20170428171122) do
     t.integer  "area"
     t.date     "completion_date"
     t.text     "description"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.boolean  "featured",        default: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
   end
 
   create_table "team_members", force: :cascade do |t|
