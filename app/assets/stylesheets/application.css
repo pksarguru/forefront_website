@@ -17,6 +17,24 @@
  *= require lib/cubeportfolio.min.css
  *= require lib/pushy.css
  *= require lib/style.css
+ *= require lib/bootstrap-theme.min.css
  * \= require_tree .
  *= require_self
  */
+
+.news-panel {
+  background-color: #FFFFFF;
+  height: 100px;
+  margin: 5px;
+
+}
+
+.panel-body {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body {
+  background-color: #F5F8FA;
+}
