@@ -7,6 +7,8 @@ class CreateProjects < ActiveRecord::Migration[5.0]
       t.integer :area
       t.date    :completion_date
       t.text    :description
+      t.boolean :featured, default: false
+      t.string  :category
 
       t.timestamps
     end
