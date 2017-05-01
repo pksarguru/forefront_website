@@ -1,0 +1,14 @@
+<li>
+  <img src="<%= asset_path project.images.first.url %>" height="1000" alt="" class="img-fluid">
+  <div class="slider-overlay">
+    <div class="slider-table">
+      <div class="slider-vm">
+        <div class="container text-center">
+          <h1><%=project.name%></h1>
+          <p><%=project.name%></p>
+          <a href="<%project_path(project)%>" class="btn btn-lg btn-white-border">See More</a>
+        </div>
+      </div>
+    </div>
+  </div><!--slider overlay end-->
+</li>

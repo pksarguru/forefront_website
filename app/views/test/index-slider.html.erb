@@ -36,48 +36,7 @@
 <section id="home" class="overflow-hidden slider-banner">
   <div class="main-slider">
     <ul class="slides">
-      <li>
-        <img src="<%= asset_path 'bg-1.jpg' %>" alt="" class="img-fluid">
-        <div class="slider-overlay">
-          <div class="slider-table">
-            <div class="slider-vm">
-              <div class="container text-center">
-                <h1>We are xone</h1>
-                <p>Creative one page parallax</p>
-                <a href="#" class="btn btn-lg btn-white-border">See More</a>
-              </div>
-            </div>
-          </div>
-        </div><!--slider overlay end-->
-      </li>
-      <li>
-        <img src="<%= asset_path 'bg-2.jpg' %>" alt="" class="img-fluid">
-        <div class="slider-overlay">
-          <div class="slider-table">
-            <div class="slider-vm">
-              <div class="container text-center">
-                <h1>Digital web studio</h1>
-                <p>Creative digital agency</p>
-                <a href="#" class="btn btn-lg btn-white-border">See More</a>
-              </div>
-            </div>
-          </div>
-        </div><!--slider overlay end-->
-      </li>
-      <li>
-        <img src="<%= asset_path 'bg-3.jpg' %>" alt="" class="img-fluid">
-        <div class="slider-overlay">
-          <div class="slider-table">
-            <div class="slider-vm">
-              <div class="container text-center">
-                <h1>Awesome Parallax effects</h1>
-                <p>Creative digital agency</p>
-                <a href="#" class="btn btn-lg btn-white-border">See More</a>
-              </div>
-            </div>
-          </div>
-        </div><!--slider overlay end-->
-      </li>
+      <%= render partial: "projects/project-feature", collection: @projects, as: :project%>
     </ul><!--slides end-->
   </div><!--slider end-->
 </section>
