@@ -86,3 +86,10 @@
         </div>
     </div>
 </section>
+
+<script>
+  $('.expand').click(function(e){
+    e.preventDefault();
+    $(this).parents('.content').find('p').toggleClass('expanded');
+  })
+</script>
