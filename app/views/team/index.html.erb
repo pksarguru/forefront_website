@@ -28,39 +28,19 @@
                     </div>
                 </div>
                 <div class="row">
+                  <% @team_members.each do |person| %>
                     <div class="col-md-4 margin-b-30">
                         <div class="person-col">
                             <img src="<%= asset_path 'team1.png' %>" class="img-fluid">
                             <div class="person-overlay">
                                 <div class="person-inner">
-                                    <h4 class="text-uppercase">Carlos Smith</h4>
-                                    <span>Project Manager</span>
+                                    <h4 class="text-uppercase"><%= person.first_name + " " + person.last_name %></h4>
+                                    <span><%= person.role %></span>
                                 </div>
                             </div><!--person overlay end-->
                         </div><!--person col end-->
                     </div><!--col-->
-                    <div class="col-md-4 margin-b-30">
-                        <div class="person-col">
-                            <img src="<%= asset_path 'team2.png' %>" class="img-fluid">
-                            <div class="person-overlay">
-                                <div class="person-inner">
-                                    <h4 class="text-uppercase">Emily Doe</h4>
-                                    <span>Cms-Developer</span>
-                                </div>
-                            </div><!--person overlay end-->
-                        </div><!--person col end-->
-                    </div><!--col-->
-                    <div class="col-md-4 margin-b-30">
-                        <div class="person-col">
-                            <img src="<%= asset_path 'team3.png' %>" class="img-fluid">
-                            <div class="person-overlay">
-                                <div class="person-inner">
-                                    <h4 class="text-uppercase">Emily Doe</h4>
-                                    <span>Co-founder</span>
-                                </div>
-                            </div><!--person overlay end-->
-                        </div><!--person col end-->
-                    </div><!--col-->
+                    <% end %>
                 </div><!--row-->
 
             </div>
