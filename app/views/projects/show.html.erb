@@ -1,29 +1,50 @@
-<section id="header" class="overflow-hidden">
-<%= image_tag(@project.images.first.url,class:"img-fluid") %>
-<div class="container">
-  <h1><%= @project.name %></h1>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Team</th>
-        <th>Location</th>
-        <th>Size</th>
-        <th>Completion</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><%= @project.team_name %></td>
-        <td><%= @project.location %></td>
-        <td><%= number_with_delimiter(@project.area)%>  sq ft</td>
-        <td><%= @project.completion_date.year %></td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="space-50"></div>
-  <div class="col-md-10 offset-md-1 text-center">
-    <p><%= @project.description %>
+<section id="header" class="overflow-hidden slider-banner">
+  <div class="main-slider">
+    <ul class="slides">
+      <li>
+        <%= image_tag(@project.images.first.url,class:"img-fluid", style:"object-fit:cover; width:100%; height:51vw") %>
+        <div class="slider-overlay">
+          <div class="slider-table">
+            <div class="slider-vm">
+              <div class="container text-center">
+                <h1><%= @project.name %></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
-</div>
+</section>
 
+
+
+
+<section id="project">
+  <div class="container">
+    <div class="row">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>Location</th>
+            <th>Size</th>
+            <th>Completion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @project.team_name %></td>
+            <td><%= @project.location %></td>
+            <td><%= number_with_delimiter(@project.area)%>  sq ft</td>
+            <td><%= @project.completion_date.year %></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="space-50"></div>
+      <div class="col-md-10 offset-md-1 text-center">
+        <p><%= @project.description %></p>
+      </div>
+    </div>
+  </div>
 </section>
