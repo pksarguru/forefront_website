@@ -47,12 +47,14 @@ ActiveRecord::Schema.define(version: 20170428171122) do
   end
 
   create_table "team_members", force: :cascade do |t|
-    t.string   "first_name", null: false
+    t.string   "first_name",      null: false
     t.string   "last_name"
     t.string   "role"
     t.text     "bio"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "primary_image"
+    t.text     "secondary_image"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "users", force: :cascade do |t|

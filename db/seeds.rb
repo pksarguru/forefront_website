@@ -99,8 +99,8 @@ wccn = {
 wccn_project = Project.create(wccn)
 wccn_project.images.create(url: "Willow-Creek-North-Shore.jpg")
 
-t = TeamMember.create(first_name: "Logan", last_name:"Price", role:"Developer", bio: "Whoa baby!")
-tt = TeamMember.create(first_name: "Pavan", last_name:"Sarguru", role:"Developer", bio: "The NBA is the only sport that matters.")
-ttt = TeamMember.create(first_name: "Arjun", last_name:"Venkataswamy", role:"Senior Developer", bio: "In some circles...")
+t = TeamMember.create(first_name: "Logan", last_name:"Price", role:"Developer", bio: "Whoa baby!", primary_image: "http://lorempixel.com/768/600/people/", secondary_image: "http://lorempixel.com/768/600/people/")
+tt = TeamMember.create(first_name: "Pavan", last_name:"Sarguru", role:"Developer", bio: "The NBA is the only sport that matters.", primary_image: "http://lorempixel.com/768/600/people/", secondary_image: "http://lorempixel.com/768/600/people/")
+ttt = TeamMember.create(first_name: "Arjun", last_name:"Venkataswamy", role:"Senior Developer", bio: "In some circles...", primary_image: "http://lorempixel.com/768/600/people/", secondary_image: "http://lorempixel.com/768/600/people/")
 
 TeamMember.all.each { |t| t.images.create(url:"www.url-#{t.first_name}.com") }

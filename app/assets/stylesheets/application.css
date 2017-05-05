@@ -22,6 +22,20 @@
  *= require_self
  */
 
+ .team-hero-img {
+   background-size: contain;
+ }
+
+ .team-bio {
+   text-align: center;
+   vertical-align: center;
+ }
+
+ .nav-logo {
+   display: inline;
+   height: 25px;
+ }
+
 .news-panel {
   background-color: #FFFFFF;
   height: 100px;
