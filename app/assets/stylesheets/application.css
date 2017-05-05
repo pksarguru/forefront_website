@@ -22,6 +22,11 @@
  *= require_self
  */
 
+ .nav-logo {
+   display: inline;
+   height: 25px;
+ }
+
 .news-panel {
   background-color: #FFFFFF;
   height: 100px;
