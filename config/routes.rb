@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :projects, only: [:show]
   get('/news', {controller: "news", action: "index"})
   get('/team', {controller: "team", action: "index"})
+  get('/team/:id', {controler: "team", action: "show"})
   get('/contact', {controller: "contact", action: "index"})
 
 end
