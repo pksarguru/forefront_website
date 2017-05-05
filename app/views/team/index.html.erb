@@ -13,8 +13,7 @@
     <div class="main-slider">
       <ul class="slides">
         <li>
-
-          <img src="<%= "https://static.pexels.com/photos/7097/people-coffee-tea-meeting.jpg" %>" style="width:100vw;background: rgba(0,0,0,0.3)" alt="" class="img-fluid">
+          <img src="<%= "https://static.pexels.com/photos/7097/people-coffee-tea-meeting.jpg" %>" style="object-fit:cover; width:100vw; height:51vw" alt="" class="img-fluid">
           <div class="slider-overlay">
             <div class="slider-table">
               <div class="slider-vm">
@@ -49,8 +48,9 @@
     <div class="row">
       <% @team_members.each do |person| %>
       <div class="col-md-4 margin-b-30">
+        <a href="/team/<%= person.id %>">
         <div class="person-col">
-          <a href="/team/<%= person.id %>"><img src="<%= person.primary_image %>" class="img-fluid"></a>
+            <img src="<%= person.primary_image %>" class="img-fluid">
           <div class="person-overlay">
             <div class="person-inner">
               <h4 class="text-uppercase"><%= person.first_name + " " + person.last_name %></h4>
@@ -58,6 +58,7 @@
             </div>
           </div><!--person overlay end-->
         </div><!--person col end-->
+        </a>
       </div><!--col-->
       <% end %>
     </div><!--row-->
