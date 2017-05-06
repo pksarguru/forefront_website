@@ -1,1 +1,20 @@
-<h1>Projects Index Page</h1>
+
+<div class="container">
+  <% @featured_projects.each do |project| %>
+  <div class="row">
+    <div class="col-md-offset-1 col-md-10">
+      <img src="<%= asset_path project.images.first.url %>" alt="">
+      <h2><%= project.name %></h2>
+    </div>
+  </div>
+  <% end %>
+
+  <% @projects.each do |project| %>
+  <div class="row">
+    <div class="col-md-offset-1 col-md-10">
+
+      <img src="<%= asset_path project.images.first.url %>" alt="">
+    </div>
+  </div>
+  <% end %>
+</div>
