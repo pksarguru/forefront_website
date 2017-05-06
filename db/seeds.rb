@@ -16,6 +16,11 @@ Article.all.each_with_index do |a,i|
   a.videos.create(url:"video_url#{i+1}")
 end
 
+t1 = Tag.create(name: "concrete")
+t2 = Tag.create(name: "residential")
+t3 = Tag.create(name: "JGMA")
+tags = [t1, t2, t3]
+
 projects = [
   {name:"Xanadu Center",
     team_name:"Xanadu",
@@ -50,6 +55,7 @@ image_count = Image.all.count
 projects.each do |project|
   p = Project.create(project)
   2.times {|t| p.images.create(url:"image_url#{image_count +1}")}
+  p.tags = tags
 end
 
 #REAL FOREFRONT PROJECTS
@@ -66,6 +72,7 @@ neiu = {
   completion_date: Date.new(2014,1,1)
 }
 neiu_project = Project.create(neiu)
+neiu_project.tags = tags
 neiu_project.images.create(url: "NEIU-El-Centro.jpg")
 
 nth = {
@@ -81,6 +88,7 @@ nth = {
 }
 
 nth_project = Project.create(nth)
+nth_project.tags = tags
 nth_project.images.create(url: "northwest-tower-hotel-landscape.jpg")
 nth_project.images.create(url: "northwest-tower-hotel-portrait.jpg")
 
@@ -97,6 +105,7 @@ wccn = {
 }
 
 wccn_project = Project.create(wccn)
+wccn_project.tags = tags
 wccn_project.images.create(url: "Willow-Creek-North-Shore.jpg")
 
 t = TeamMember.create(first_name: "Logan", last_name:"Price", role:"Developer", bio: "Whoa baby!", primary_image: "http://lorempixel.com/768/600/people/", secondary_image: "http://lorempixel.com/768/600/people/")
