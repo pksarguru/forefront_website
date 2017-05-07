@@ -22,33 +22,43 @@ t3 = Tag.create(name: "JGMA")
 tags = [t1, t2, t3]
 
 projects = [
-  {name:"Xanadu Center",
-    team_name:"Xanadu",
+  {name:"By The Hand Club for Kids",
+    team_name:"Team A",
     location:"Chicago, IL",
-    area: 20000,
+    area: 24000,
     completion_date: Date.today,
-    description:"This incomarabale compound is home to over 20 friends"
+    description:"This new building will be approximately 24,000 SF spread over a two story space, with a construction budget of approximately $4 million. The building will be constructed of steel framing, precast and cast-in-place concrete, and conventional spread footings. A portion of the building will contain an outdoor roof deck for community functions.  The building will also contain a gymnasium, auditorium, multi-function class room space, and office space.",
+    category: "Institutional"
   },
-  {name:"Price Home",
-    team_name:"Boops Inc.",
-    location:"Schaumburg, IL",
-    area: 2000,
+  {name:"Oak Park Station",
+    team_name:"Fitzgerald Associates Architects",
+    location:"Oak Park, IL",
+    area: 350000,
     completion_date: Date.today,
-    description: Faker::Lorem.paragraph
+    description: "Forefront Structural Engineers optimized this 20-story residential tower to include post-tensioned floor slabs and concrete cores for an efficient construction cycle.   The new building contains 191 residential units, 498 parking stalls, ground floor retail and an exterior amenity deck with swimming pool.
+    A new structural steel pedestrian bridge will connect the high-rise tower to an adjacent low-rise building.",
+    category: "Residential"
   },
-  {name:"Taco Bell Cantina",
-    team_name:"TB",
+  {name:"203 N Wabash - Virgin Hotel",
+    team_name:"Booth Hansen",
+    location:"Chciago, IL",
+    area: 400000,
+    completion_date: Date.today,
+    description: "203 N. Wabash was formerly known as the Old Dearborn Bank and was constructed in 1928. The building is comprised of steel frame construction and is founded upon rock caissons. The typical floor construction is comprised of an unique two-way ribbed joists system.
+
+    The building will become the new home for Virgin Hotel Chicago. With limited original documentation and no structural drawings, FSE led a team through selective exploration, documentation, structural analysis and final design to ensure that all the new modifications could be performed successfully.
+
+    Project highlights include strengthening the existing floor structure at various locations including a new fitness/spa amenity level, implementing new elevators and stairs, building a new rooftop bar amenity, and building a new lower level 3 for building function. The project also involves selective demolition and recreation of the original two-story atrium as well as adding a new canopy and modern sidewalk elevator entrance.",
+    category: "Hospitality"
+  },
+  {name:"1K Fulton",
+    team_name:"Hartshorne Plunkard Architects",
     location:"Chicago, IL",
-    area: 800,
+    area: 400000,
     completion_date: Date.today,
-    description: Faker::Lorem.paragraph
-  },
-  {name:"Chipotle",
-    team_name:"Chipotes",
-    location:"Chicago, IL",
-    area: 1000,
-    completion_date: Date.today,
-    description: Faker::Lorem.paragraph
+    description: "Forefront Structural Engineer is collaboratively working with Hartshorne Plunkard Architect to optimize the adaptive re-use of the existing 10-story cold storage building.  Constructed in 1919, the original building contains a secondary perimeter frame that thermally isolates the building structure.  FSE worked carefully with the contractor, architect, and developer to implement a scheme to decommission the cold storage building and modify the structural elements to include new elevators, mechanical systems, rooftop amenity deck and sub-basement parking.
+    Immediately adjacent to the 10-story building, FSE is designing a new modern 7-story office building with a link to the existing building.  The new building will contain ground level retail and sub-grade parking.",
+    category: "Commercial"
   }
 ]
 image_count = Image.all.count
