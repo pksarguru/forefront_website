@@ -6,10 +6,14 @@
   background-color: #292b2c !important;
 }
 
-
 .projects .navbar-nav a.projects,
 .news .navbar-nav a.news,
 .team .navbar-nav a.team,
 .contact .navbar-nav a.contact {
   color: #fff;
+}
+
+.nav-logo {
+  display: inline;
+  height: 25px;
 }

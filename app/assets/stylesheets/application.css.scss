@@ -24,55 +24,6 @@
 
 @import 'variables';
 
-body {
-  padding-top: $content-margin-top;
-}
-
- .project-tags {
-   margin-top: 20px;
-   margin-bottom: 35px;
- }
-
- .project-index-name {
-   margin-top: 20px;
-   margin-bottom: 20px;
- }
-
- .project-index-img {
-   display: block;
-   margin: auto;
-   width: 98%;
- }
-
- .project-index-img:hover {
-   width: 100%;
-   opacity: 0.8;
-   -webkit-transition: all 0.5s ease;
-   -moz-transition: all 0.5s ease;
-   -o-transition: all 0.5s ease;
- }
-
- .team-hero-img {
-   background-size: contain;
- }
-
- .team-bio {
-   text-align: center;
-   vertical-align: center;
- }
-
- .nav-logo {
-   display: inline;
-   height: 25px;
- }
-
-.news-panel {
-  background-color: #FFFFFF;
-  height: 100px;
-  margin: 5px;
-
-}
-
 .panel-body {
   position: relative;
   top: 50%;
@@ -80,5 +31,6 @@ body {
 }
 
 body {
+  padding-top: $content-margin-top;
   background-color: #F5F8FA;
 }
