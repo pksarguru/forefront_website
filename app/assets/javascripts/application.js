@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery_ujs
 //= require lib/tether.min.js
 //= require lib/jquery-migrate.min.js
 //= require lib/jquery.easing.min.js
@@ -27,9 +28,7 @@
 //= require lib/cube-awesome-work.js
 //= require lib/scroll-reavel-custom.js
 //= require lib/pushy.min.js
-//= require lib/google-map.js
 //= require lib/contact.js
 //= require news
-//= require jquery_ujs
 //= require turbolinks
 //= require_tree .
