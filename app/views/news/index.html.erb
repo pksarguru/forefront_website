@@ -1,121 +1,7 @@
-<style>
-
-  .services-list li.news-item p {
-    max-height: 100px;
-    overflow: hidden;
-  }
-
-  .services-list li.expanded p {
-    max-height: 1000px;
-    overflow: auto;
-  }
-
-  .services-list li:hover.news-item.expanded {
-    background-color: transparent;
-    color: #888;
-  }
-
-  .services-list li:hover.news-item.expanded h4 {
-    color: black;
-  }
-
-  li.news-item .full-img {
-    opacity: 0;
-    width: 0;
-  }
-
-  li.news-item.expanded .full-img {
-    opacity: 100;
-    width: 100%;
-  }
-
-  li.news-item .spacer {
-    display: none;
-  }
-
-  li.news-item.expanded .spacer {
-    display: block;
-  }
-
-
-  li.news-item .thumb img {
-    width: 100%;
-  }
-
-  li.news-item.expanded .thumb {
-    width: 0;
-    opacity: 0;
-  }
-
-  li.news-item h4 {
-    font-size: 1.5rem;
-  }
-
-  li.news-item.expanded h4 {
-    font-size: 3rem;
-  }
-
-  .see-more-container,
-  .expanded .see-less-container {
-    display: block;
-  }
-
-  .see-less-container,
-  .expanded .see-more-container {
-    display: none;
-  }
-
-
-  li.news-item .full-img-container {
-    text-align: right;
-    height: 0;
-  }
-
-  li.news-item.expanded .full-img-container {
-    text-align: right;
-    height: auto;
-  }
-
-  .services-list div.thumb {
-    float: left;
-    margin-right: 20px;
-    width: 75px;
-    text-align: center;
-    line-height: 60px;
-    font-size: 35px;
-  }
-
-  .thumb, .full-img, h4 {
-    -webkit-transition: 0.7s all;
-            transition: 0.7s all;
-  }
-
-  li.news-item {
-    -webkit-transition: 0s color;
-            transition: 0s color;
-  }
-
-  p {
-    -webkit-transition: 0.7s max-height;
-            transition: 0.7s max-height;
-  }
-  @media (min-width: 768px){
-    body .services-list li.news-item {
-      border-right: none;
-      border-left: none;
-    }
-
-    .services-list div.thumb {
-      width: 200px;
-      opacity: 100;
-    }
-  }
-
-</style>
 <% content_for :navbar do %>
   <%= render partial: "partials/navbar", locals: {extra_classes: 'secondary-page news'} %>
 <% end %>
-<section id="news" class="overflow-hidden slider-banner">
+<section id="home" class="overflow-hidden slider-banner">
   <div class="main-slider">
     <ul class="slides">
       <li>
@@ -135,97 +21,26 @@
 </section>
 <!-- news section -->
 <section id="services">
-    <div class="space-100"></div>
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-8 offset-md-2">
-                <ul class="row list-unstyled services-list">
-                  <li class="col-md-12 clearfix scrollReveal sr-bottom news-item">
-                      <div class="thumb"><img src="http://www.forefrontstructural.com/images/willow.jpg" alt=""></div>
-                      <div class="content">
-                          <h4>NEWS!</h4>
-                          <div class="full-img-container">
-                            <img class="full-img" src="http://www.forefrontstructural.com/images/willow.jpg" alt="">
-                          </div>
-                          <div class="spacer space-40"></div>
-                          <p>
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-                          </p>
-                          <div class="text-right see-more-container"><span class="see-more">see more</span></div>
-                          <div class="text-right see-less-container"><a href="#" class="see-less">see less</a></div>
-                      </div>
-                  </li><!--service col end with li-->
-                  <li class="col-md-12 clearfix scrollReveal sr-bottom news-item">
-                      <div class="thumb"><img src="http://www.forefrontstructural.com/images/willow.jpg" alt=""></div>
-                      <div class="content">
-                          <h4>NEWS!</h4>
-                          <div class="full-img-container">
-                            <img class="full-img" src="http://www.forefrontstructural.com/images/willow.jpg" alt="">
-                          </div>
-                          <div class="spacer space-40"></div>
-                          <p>
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-                          </p>
-                          <div class="text-right see-more-container"><span class="see-more">see more</span></div>
-                          <div class="text-right see-less-container"><a href="#" class="see-less">see less</a></div>
-                      </div>
-                  </li><!--service col end with li-->
-                  <li class="col-md-12 clearfix scrollReveal sr-bottom news-item">
-                      <div class="thumb"><img src="http://www.forefrontstructural.com/images/willow.jpg" alt=""></div>
-                      <div class="content">
-                          <h4>NEWS!</h4>
-                          <div class="full-img-container">
-                            <img class="full-img" src="http://www.forefrontstructural.com/images/willow.jpg" alt="">
-                          </div>
-                          <div class="spacer space-40"></div>
-                          <p>
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-                          </p>
-                          <div class="text-right see-more-container"><span class="see-more">see more</span></div>
-                          <div class="text-right see-less-container"><a href="#" class="see-less">see less</a></div>
-                      </div>
-                  </li><!--service col end with li-->
-                  <li class="col-md-12 clearfix scrollReveal sr-bottom news-item">
-                      <div class="thumb"><img src="http://www.forefrontstructural.com/images/willow.jpg" alt=""></div>
-                      <div class="content">
-                          <h4>NEWS!</h4>
-                          <div class="full-img-container">
-                            <img class="full-img" src="http://www.forefrontstructural.com/images/willow.jpg" alt="">
-                          </div>
-                          <div class="spacer space-40"></div>
-                          <p>
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-                            Interesting stuff Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi esse et, repellendus voluptatibus, iste impedit vel vero, consectetur adipisci consequuntur excepturi! Rerum quis vel adipisci ab veritatis, doloremque necessitatibus quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugit impedit reprehenderit, ab tenetur perferendis ducimus incidunt architecto voluptates. Nobis, in, iusto. Suscipit laborum nam quia recusandae. Lorem modi, obcaecati expedita.
-                          </p>
-                          <div class="text-right see-more-container"><span class="see-more">see more</span></div>
-                          <div class="text-right see-less-container"><a href="#" class="see-less">see less</a></div>
-                      </div>
-                  </li><!--service col end with li-->
-
-
-                </ul><!--service list end-->
-            </div>
-        </div><!--row end-->
-        <hr>
-        <div class="space-60"></div>
-        <div class="text-center scrollReveal sr-bottom">
-            <h2 class="margin-b-20">Want to work with us?</h2>
-            <a href="#" class="btn btn-dark-border btn-lg">Our Portfolio</a>
+  <div class="space-100"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <ul class="row list-unstyled services-list">
+          <%= render partial: "news/stub", collection: @articles, as: :article%>
+        </ul><!--service list end-->
+        <div class="col-md-12 text-center">
+          <a href="#" class="btn btn-lg btn-skin-border btn-block margin-b-20">Load More</a>
         </div>
-        <div class="space-60"></div>
+      </div>
+    </div><!--row end-->
+    <hr>
+    <div class="space-60"></div>
+    <div class="text-center scrollReveal sr-bottom">
+        <h1 class="margin-b-20">Want to work with us?</h1>
+        <a href="#" class="btn btn-dark-border btn-lg">Our Portfolio</a>
     </div>
+    <div class="space-10"></div>
+  </div>
 </section>
 
 <script>
