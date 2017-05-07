@@ -29,6 +29,7 @@
 //= require lib/pushy.min.js
 //= require lib/google-map.js
 //= require lib/contact.js
+//= require news
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .

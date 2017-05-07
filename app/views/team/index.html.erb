@@ -6,7 +6,9 @@
 <section class="page-wrapper clearfix">
   <!-- Static navbar -->
   <!--  navbar -->
-  <%= render partial: "partials/navbar" %>
+  <% content_for :navbar do %>
+    <%= render partial: "partials/navbar", locals: {extra_classes: 'secondary-page team'} %>
+  <% end %>
   <!--end navigation-->
 
   <section id="home" class="overflow-hidden slider-banner">
