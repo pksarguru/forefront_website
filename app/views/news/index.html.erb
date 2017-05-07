@@ -42,15 +42,3 @@
     <div class="space-10"></div>
   </div>
 </section>
-
-<script>
-  $('.news-item').click(function(e){
-    $(this).addClass('expanded');
-  })
-
-  $('.see-less').click(function(e){
-    e.preventDefault();
-    e.stopPropagation();
-    $(this).parents('.news-item').removeClass('expanded');
-  })
-</script>
