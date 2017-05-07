@@ -8,5 +8,8 @@
   background-color: #FFFFFF;
   height: 100px;
   margin: 5px;
+}
 
+.services-list li.news-item:last-of-type {
+  border-bottom: none;
 }
