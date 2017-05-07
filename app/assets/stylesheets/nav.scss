@@ -1,9 +1,19 @@
 .navbar {
   border-radius: 0;
+  background: red;
+}
+
+// (41,43,44)
+.transparent-nav.bg-inverse {
+  background-color: rgba(41,43,44, 0.5) !important;
+}
+
+.transparent-nav.bg-inverse.shrink {
+  // background-color: rgba(41,43,44, 0.8) !important;
 }
 
 .transparent-nav.bg-inverse.secondary-page {
-  background-color: #292b2c !important;
+  background-color: rgba(41,43,44, 0.5) !important;
 }
 
 .projects .navbar-nav a.projects,
