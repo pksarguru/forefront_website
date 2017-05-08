@@ -35,11 +35,25 @@
     padding-bottom:100%;
 
 }
-.gallery-thumbnail-wrapper img{
+.gallery-thumbnail-wrapper img {
     position:absolute;
     object-fit: cover;
     height:100%;
     width:100%;
+}
+
+.modal-slide {
+  position:relative;
+  height:75vh;
+  background-color: black;
+}
+
+.modal-slide img {
+  // position:absolute;
+  display:block;
+  max-height:100%;
+  max-width:100%;
+  margin:auto;
 }
 
 // From w3schools

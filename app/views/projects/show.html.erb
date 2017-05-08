@@ -64,7 +64,9 @@
             <% @images.each do |image| %>
               <div class="mySlides">
                 <div class="numbertext">1 / 4</div>
-                <%= image_tag(image.url, style:"width:100%") %>
+                <div class="modal-slide">
+                  <%= image_tag(image.url) %>
+                </div>
               </div>
             <% end %>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -74,7 +76,7 @@
             </div>
             <div class="row">
               <% @images.each_with_index do |image,i| %>
-              <div class="col-md-3">
+              <div class="col-md-1">
                 <div class="gallery-thumbnail-wrapper">
                   <%= image_tag(image.url,class:"demo",onclick:"currentSlide(#{i+1})") %>
                 </div>
