@@ -52,7 +52,7 @@
   <div class="container">
     <div class="row">
         <% @images.each_with_index do |image,i| %>
-          <div class="col-md-3">
+          <div class="col-md-3 padding-override">
             <div class="gallery-thumbnail-wrapper">
               <%= image_tag(image.url, onclick:"openModal();currentSlide(#{i+1})", class:"hover-shadow") %>
             </div>
@@ -74,9 +74,9 @@
             <div class="caption-container">
               <p id="caption"></p>
             </div>
-            <div class="row">
+            <div class="row modal-thumbnails-wrapper">
               <% @images.each_with_index do |image,i| %>
-              <div class="col-md-1">
+              <div class="col-md-1 padding-override">
                 <div class="gallery-thumbnail-wrapper">
                   <%= image_tag(image.url,class:"demo",onclick:"currentSlide(#{i+1})") %>
                 </div>
@@ -91,48 +91,11 @@
   </div>
 
 
-
-
 </section>
 
 <script>
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-
+// Didn't work when in separate js file. That being said... I didn't try to fix it.
+// This makes modal close upon pressing 'esc' key
 $(document).keyup(function(e) {
     if (e.keyCode == 27) {
       closeModal();

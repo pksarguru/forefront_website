@@ -49,11 +49,18 @@
 }
 
 .modal-slide img {
-  // position:absolute;
   display:block;
   max-height:100%;
   max-width:100%;
   margin:auto;
+}
+
+.padding-override {
+   padding:10px;
+}
+
+.modal-thumbnails-wrapper {
+  background-color: black;
 }
 
 // From w3schools
