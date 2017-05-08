@@ -1,16 +1,12 @@
-<% content_for :navbar do %>
-  <%= render partial: "partials/navbar", locals: {extra_classes: ''} %>
-<% end %>
-
-<section id="header" class="overflow-hidden slider-banner">
+<section id="project-show" class="overflow-hidden slider-banner">
   <div class="main-slider">
     <ul class="slides">
       <li>
-        <%= image_tag(@project.images.first.url,class:"img-fluid", style:"object-fit:cover; width:100%; height:51vw") %>
+        <%= image_tag(@project.images.first.url,class:"img-fluid text-overlay") %>
         <div class="slider-overlay">
           <div class="slider-table">
             <div class="slider-vm">
-              <div class="container text-center" style="width:100vw;background: rgba(0,0,0,0.3)">
+              <div class="container text-center text-overlay">
                 <h1><%= @project.name %></h1>
               </div>
             </div>

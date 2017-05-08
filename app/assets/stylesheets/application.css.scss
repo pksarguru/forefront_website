@@ -57,3 +57,17 @@ body {
   padding-top: $content-margin-top;
   background-color: #F5F8FA;
 }
+
+#home,
+#news,
+#team,
+#contact,
+#project-show,
+#team-show {
+  margin-top: -1 * $content-margin-top;;
+}
+
+.text-overlay {
+  width:100vw;
+  background: rgba(0,0,0,0.3);
+}
