@@ -47,3 +47,90 @@
     </div>
   </div>
 </section>
+
+<section id="image-gallery">
+  <div class="container">
+    <div class="row">
+        <% @images.each_with_index do |image,i| %>
+          <div class="col-md-3">
+            <div class="gallery-thumbnail-wrapper">
+              <%= image_tag(image.url, onclick:"openModal();currentSlide(#{i+1})", class:"hover-shadow") %>
+            </div>
+          </div>
+        <% end %>
+        <div id="myModal"class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <% @images.each do |image| %>
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <%= image_tag(image.url, style:"width:100%;max-height:100%") %>
+              </div>
+            <% end %>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <% @images.each_with_index do |image,i| %>
+              <div class="column">
+                <%= image_tag(image.url,class:"demo gallery-thumbnail",onclick:"currentslide(#{i+1})") %>
+                <!-- <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature"> -->
+              </div>
+            <% end %>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+</section>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+$(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+      closeModal();
+    }
+});
+
+</script>
