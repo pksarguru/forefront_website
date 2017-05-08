@@ -42,7 +42,7 @@ a, button {
 }
 
 a {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 a:hover {
   color: #aeaeae;
@@ -91,7 +91,7 @@ h6 {
 .border-width {
   width: 60px;
   height: 2px;
-  background: #bfa67a;
+  background: #BFA67A;
   margin: 10px 0;
 }
 
@@ -184,7 +184,7 @@ h6 {
 }
 
 .skin-bg {
-  background-color: #bfa67a;
+  background-color: #BFA67A;
 }
 
 .gray-bg {
@@ -208,12 +208,12 @@ h6 {
   -moz-box-shadow: none;
   -ms-box-shadow: none;
   box-shadow: none;
-  border-bottom-color: #bfa67a;
+  border-bottom-color: #BFA67A;
 }
 
 .dropcap:first-letter {
   font-size: 30px;
-  color: #bfa67a;
+  color: #BFA67A;
 }
 
 /**********back to top*************/
@@ -222,7 +222,7 @@ h6 {
   font-size: 30px;
   background: transparent;
   font-weight: bold;
-  color: #bfa67a;
+  color: #BFA67A;
   text-decoration: none;
   position: fixed;
   bottom: 10px;
@@ -239,7 +239,7 @@ h6 {
 .scrollToTop:hover {
   text-decoration: none;
   opacity: 1;
-  color: #bfa67a;
+  color: #BFA67A;
 }
 
 /**preloader**/
@@ -263,7 +263,7 @@ h6 {
   margin: -50px 0 0 -50px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #bfa67a;
+  border-top-color: #BFA67A;
   animation: spin 2s linear infinite;
 }
 
@@ -276,7 +276,7 @@ h6 {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #bfa67a;
+  border-top-color: #BFA67A;
   animation: spin 3s linear infinite;
 }
 
@@ -289,7 +289,7 @@ h6 {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #bfa67a;
+  border-top-color: #BFA67A;
   animation: spin 1.5s linear infinite;
 }
 
@@ -319,7 +319,7 @@ h6 {
 }
 
 .text-color {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 
 .section-title {
@@ -387,7 +387,7 @@ header {
   color: #000;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 
 .navbar-nav > li > a {
@@ -399,7 +399,7 @@ header {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  color: #bfa67a;
+  color: #BFA67A;
   background-color: transparent;
   cursor: default;
 }
@@ -414,10 +414,10 @@ header {
   color: #fff;
 }
 .header-dark .navbar-default .navbar-nav > li > a:hover {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 .header-dark .navbar-default .navbar-nav > .active > a, .header-dark .navbar-default .navbar-nav > .active > a:focus, .header-dark .navbar-default .navbar-nav > .active > a:hover {
-  color: #bfa67a;
+  color: #BFA67A;
   background-color: transparent;
   cursor: default;
 }
@@ -518,7 +518,7 @@ The team
   display: block;
 }
 .person-col .person-overlay .person-inner ul li a:hover {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 .person-col:hover .person-overlay {
   opacity: 1;
@@ -548,7 +548,7 @@ Blog styles
   color: #333;
 }
 .post .post-content h3 a:hover {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 .post .post-meta {
   margin: 0px;
@@ -579,7 +579,7 @@ Blog styles
   color: #555;
 }
 .popular-posts li a:hover h4 {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 .popular-posts li:last-child a {
   border-bottom: 0px;
@@ -627,12 +627,12 @@ Blog styles
 Pagination styles
 */
 .pagination > li > a, .pagination > li > span {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 
 .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
-  border-color: #bfa67a;
-  background: #bfa67a;
+  border-color: #BFA67A;
+  background: #BFA67A;
 }
 
 /*
@@ -662,7 +662,7 @@ Menu left style  added in v1.3
     padding: 0px;
   }
   .left-menu .navbar-default .navbar-nav > .active > a, .left-menu .navbar-default .navbar-nav > .active > a:focus, .left-menu .navbar-default .navbar-nav > .active > a:hover {
-    color: #bfa67a;
+    color: #BFA67A;
     background-color: transparent;
   }
   .left-menu .navbar-default .navbar-nav > li a, .left-menu .navbar-header {
@@ -699,7 +699,7 @@ Menu left style  added in v1.3
     padding: 10px 20px;
   }
   .left-menu .dropdown-menu > li > a:hover, .left-menu .dropdown-menu > li > a:focus {
-    color: #bfa67a;
+    color: #BFA67A;
     background-color: transparent;
   }
   .left-menu .navbar-nav > li > a {
@@ -720,7 +720,7 @@ Menu left style  added in v1.3
     color: #999;
   }
   .top-socials li a:hover {
-    color: #bfa67a;
+    color: #BFA67A;
   }
   .top-socials li a i {
     display: block;
@@ -746,7 +746,7 @@ Menu left style  added in v1.3
   font-family: "Playfair Display", serif;
 }
 .left-menu .navbar-default .navbar-nav > li .menu-drop-toggle:hover, .left-menu .navbar-default .navbar-nav > li a:hover {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 
 /*
@@ -799,7 +799,7 @@ Footer
   color: #999;
 }
 .contact-details ul li a:hover {
-  color: #bfa67a;
+  color: #BFA67A;
 }
 
 @media (max-width: 767px) {
