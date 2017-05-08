@@ -725,18 +725,19 @@ icon-boxes
   transition: all 0.3s;
 }
 .services-list li h4 {
+  color: #78A22F;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 2px;
 }
 .services-list li:hover {
-  background-color: #78A22F;
+  background-color: rgba(0, 0, 0, 0.1);
   border-color: #78A22F;
-  color: #fff;
+  color: #000;
 }
 .services-list li:hover h4 {
-  color: #fff;
+  color: #78A22F;
 }
 
 .process-box h2 {
