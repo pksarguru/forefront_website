@@ -142,3 +142,5 @@ tt = TeamMember.create(first_name: "Pavan", last_name:"Sarguru", role:"Developer
 ttt = TeamMember.create(first_name: "Arjun", last_name:"Venkataswamy", role:"Senior Developer", bio: "In some circles...", primary_image: "http://lorempixel.com/768/600/people/", secondary_image: "http://lorempixel.com/768/600/people/")
 
 TeamMember.all.each { |t| t.images.create(url:"www.url-#{t.first_name}.com") }
+
+puts "You have seeded"
