@@ -1,3 +1,22 @@
+$(document).keydown(function(e) {
+  if (e.keyCode == 37) {
+    plusSlides(-1);
+  }
+});
+
+$(document).keydown(function(e) {
+  if (e.keyCode == 39) {
+    plusSlides(1);
+  }
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode == 27) {
+    closeModal();
+  }
+});
+
+
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
