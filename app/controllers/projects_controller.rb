@@ -6,5 +6,6 @@ class ProjectsController < ApplicationController
 
   def show
     @project = Project.find(params[:id])
+    @images = Image.where(imageable_type:"Project")
   end
 end
